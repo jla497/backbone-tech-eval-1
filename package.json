@@ -1,7 +1,7 @@
 {
-  "name": "backbone.js",
+  "name": "backbone-tech-eval",
   "version": "1.0.0",
-  "description": "A school project of a technology evaluation for Backbone.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,15 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/jkeay/backbone.js.git"
   },
-  "keywords": [
-    "backbone",
-    "tech",
-    "eval"
-  ],
-  "author": "jkeay, jla497, mkaila",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jkeay/backbone.js/issues"
   },
-  "homepage": "https://github.com/jkeay/backbone.js#readme"
+  "homepage": "https://github.com/jkeay/backbone.js#readme",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
 }
