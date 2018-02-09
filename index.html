@@ -17,5 +17,57 @@
         <header>
             <h1>JayJaeMark</h1>
         </header>
+        <section>
+            <div>
+                <h2>What is backbone.js?</h2>
+                <p>
+                    Backbone is a widely used node.js package providing separation of business logic, server/client logic, and the displaying of information.
+                    The main features of backbone driving webapps includes:
+                </p>
+                <ul>
+                    <li>Models: Objects holding business information/logic</li>
+                    <li>Collections: Ordered groups of models</li>
+                    <li>Views: Displays and templating for organizing the webapp</li>
+                    <li>Routers: URI management</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Models</h2>
+                <p>Models are considered the main focus of backbone and hold all the information for a webapp.</p>
+
+                <h3>Usage</h3>
+                <p>Models interact through javascript via http requests with the server.</p>
+                <ul>
+                    <li>GET: locally retrieves an attribute of a model</li>
+                    <li>SET: locally sets the value for attributes of a model</li>
+                    <li>FETCH: requests from the server a specific object to be store in the model</li>
+                    <li>SAVE: requests the server to save the changes to model to the database</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Collections</h2>
+                <p>
+                    Collections include groups of models. Grouping models allows for easy manipulation and retrieval of multiple models.
+                    Most of the functions that a model uses is also shared with collections. These can be modified to retrieve and communicate over larger amounts of data.
+                </p>
+                <h3>Usage</h3>
+                <ul>
+                    <li>GET: locally retrieves a model from a collection</li>
+                    <li>SET: locally sets a group of models in a collection</li>
+                    <li>FETCH: requests from the server an array of objects which are stored as models</li>
+                    <li>SAVE: requests the server to save the changes to each model in the collection to the database</li>
+                </ul>
+                <p>Collections act similarly to arrays and have a set of functions to add, remove and retrieve elements (models)</p>
+                <ul>
+                    <li>PUSH: adds a model to the end of the collection</li>
+                    <li>POP: removes and returns the model at the end of the collection</li>
+                    <li>SLICE: adds a model to the front of the collection</li>
+                    <li>SHIFT: removes and returns the model at the front of the collection</li>
+                </ul>
+            </div>
+            <div>
+                
+            </div>
+        </section>
     </body>
 </html>
