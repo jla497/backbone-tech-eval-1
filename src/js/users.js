@@ -1,14 +1,17 @@
-// This is a plain old Backbone Model
-var user = Backbone.Model.extend({
+var UserModel = Backbone.Model.extend({
   defaults: {
-    name: "",
+    name: '',
     phonenumber: 0,
-    username: ""
+    username: ''
   }
 });
 
-var users = Backbone.Firebase.Collection.extend({
+var UserCollection = Backbone.Firebase.Collection.extend({
   url: 'https://backbone-demo-a094e.firebaseio.com/users',
-  url: 'https://<your-firebase>.firebaseio.com/todos',
-  model: user
+  model: UserModel
 });
+
+var users = new UserCollection();
+users.fetch();
+
+console.log(users);
