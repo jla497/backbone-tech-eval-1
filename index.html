@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tech Eval: Backbone</title>
+        <link rel="stylesheet" type="text/css" href="src/css/base.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.js"></script>
+        <script src="src/js/scripts.js"></script>
+        <script src="src/js/users.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>JayJaeMark</h1>
+        </header>
+        <section>
+            <div>
+                <h2>What is backbone.js?</h2>
+                <p>
+                    Backbone is a widely used node.js package providing separation of business logic, server/client logic, and the displaying of information.
+                    The main features of backbone driving webapps includes:
+                </p>
+                <ul>
+                    <li>Models: Objects holding business information/logic</li>
+                    <li>Collections: Ordered groups of models</li>
+                    <li>Views: Displays and templating for organizing the webapp</li>
+                    <li>Routers: URI management</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Models</h2>
+                <p>Models are considered the main focus of backbone and hold all the information for a webapp.</p>
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Tech Eval: Backbone</title>
-    <script src="js/lib/modernizr-2.6.2.min.js"></script>
-    <script data-main="src/js/main" src="src/js/require.js"></script>
-        
-    </main>"
-</head>
-
-<body>
-    <div id="container"></div>
-    
-</body>
-
+                <h3>Usage</h3>
+                <p>Models interact through javascript via http requests with the server.</p>
+                <ul>
+                    <li>GET: locally retrieves an attribute of a model</li>
+                    <li>SET: locally sets the value for attributes of a model</li>
+                    <li>FETCH: requests from the server a specific object to be store in the model</li>
+                    <li>SAVE: requests the server to save the changes to model to the database</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Collections</h2>
+                <p>
+                    Collections include groups of models. Grouping models allows for easy manipulation and retrieval of multiple models.
+                    Most of the functions that a model uses is also shared with collections. These can be modified to retrieve and communicate over larger amounts of data.
+                </p>
+                <h3>Usage</h3>
+                <ul>
+                    <li>GET: locally retrieves a model from a collection</li>
+                    <li>SET: locally sets a group of models in a collection</li>
+                    <li>FETCH: requests from the server an array of objects which are stored as models</li>
+                    <li>SAVE: requests the server to save the changes to each model in the collection to the database</li>
+                </ul>
+                <p>Collections act similarly to arrays and have a set of functions to add, remove and retrieve elements (models)</p>
+                <ul>
+                    <li>PUSH: adds a model to the end of the collection</li>
+                    <li>POP: removes and returns the model at the end of the collection</li>
+                    <li>SLICE: adds a model to the front of the collection</li>
+                    <li>SHIFT: removes and returns the model at the front of the collection</li>
+                </ul>
+            </div>
+            <div>
+                <p id="object"></p>
+            </div>
+        </section>
+    </body>
 </html>
